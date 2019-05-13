@@ -17,7 +17,7 @@ namespace CrimeAnalyzer
 
             var yearStart = (from statlist in ras select statlist.Year).Min();
             var yearEnd = (from statlist in ras select statlist.Year).Max();
-            report += $"\nPeriod: {yearStart}-{yearEnd} ({ras.Count} years)";
+            report += $"Period: {yearStart}-{yearEnd} ({ras.Count} years)";
             report += System.Environment.NewLine;
 
             report += "Years with murders per year < 15,000: ";
